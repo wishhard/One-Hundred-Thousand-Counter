@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_count"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_color"
+    android:splitMotionEvents="false"
+    tools:context="com.wishhard.ohtc.CountActivity">
+
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/countActivity_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ToolbarTheme"
+        android:elevation="4dp"
+        app:contentInsetLeft="3dp"
+        app:contentInsetStart="3dp"
+        app:titleTextAppearance="@style/Toolbar.TitleText"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+
+    <TextView
+        android:id="@+id/count_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_textview_hight"
+        android:gravity="center"
+        android:layout_marginTop="13dp"
+        android:textSize="@dimen/title_font_size"
+        android:layout_below="@+id/countActivity_toolbar"
+        android:background="@android:color/black"
+        android:textColor="@android:color/white"
+        android:includeFontPadding="false"
+        android:layout_marginLeft="@dimen/odo_margen"
+        android:layout_marginStart="@dimen/odo_margen"
+        android:layout_marginRight="@dimen/odo_margen"
+        android:layout_marginEnd="@dimen/odo_margen"
+        />
+
+    <EditText
+        android:id="@+id/sc_et"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="15"
+        android:inputType="textPersonName"
+        android:hint="@string/et_hint_count_title"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/countActivity_toolbar"
+        android:textColor="@android:color/white"
+        android:layout_marginLeft="@dimen/odo_margen"
+        android:layout_marginStart="@dimen/odo_margen"
+        android:layout_marginRight="@dimen/odo_margen"
+        android:layout_marginEnd="@dimen/odo_margen"
+        />
+
+    <com.wishhard.ohtc.odo_view.OdoMeter
+        android:id="@+id/odo_meter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/odo_margin_top"
+        android:layout_below="@+id/count_title"
+        android:layout_marginLeft="@dimen/odo_margen"
+        android:layout_marginStart="@dimen/odo_margen"
+        android:layout_marginRight="@dimen/odo_margen"
+        android:layout_marginEnd="@dimen/odo_margen"
+
+       >
+
+    </com.wishhard.ohtc.odo_view.OdoMeter>
+
+    <com.wishhard.ohtc.views.FullyCountedTv
+        android:id="@+id/fully_countedTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/count_title"
+        android:layout_marginLeft="@dimen/odo_margen"
+        android:layout_marginStart="@dimen/odo_margen"
+        android:layout_marginRight="@dimen/odo_margen"
+        android:layout_marginEnd="@dimen/odo_margen"
+        android:lineSpacingExtra="0dp"
+        android:text="@string/one_hundred_000"
+        android:textAlignment="center"
+        android:textSize="@dimen/fully_counted_text_size"
+        android:visibility="invisible"
+        >
+
+        </com.wishhard.ohtc.views.FullyCountedTv>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/odo_meter"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="85dp"
+        android:id="@+id/linearLayout2"
+        android:splitMotionEvents="false">
+
+        <Button
+            android:id="@+id/plus_one_btn"
+            android:layout_width="@dimen/p_m_btn_width"
+            android:layout_height="@dimen/p_m_btn_height"
+            android:layout_weight="1"
+            android:text="@string/plus_one"
+            android:textColor="@color/white"
+            style="?android:attr/borderlessButtonStyle"
+            android:background="@drawable/plus_selector"
+            android:onClick="onPlusPassed"/>
+
+        <Button
+            android:id="@+id/minus_one_btn"
+            android:layout_width="@dimen/p_m_btn_width"
+            android:layout_height="@dimen/p_m_btn_height"
+            android:layout_weight="1"
+            android:text="@string/minus_one"
+            android:textColor="@color/white"
+            style="?android:attr/borderlessButtonStyle"
+            android:background="@drawable/minus_seclector"
+            android:onClick="onMinusPassed"/>
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>

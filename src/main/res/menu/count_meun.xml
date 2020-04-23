@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/save"
+        android:icon="@drawable/ic_content_save"
+        android:title="Save"
+        app:showAsAction="always"
+        android:orderInCategory="100"
+        >
+
+    </item>
+
+    <item
+        android:id="@+id/new_count"
+        android:title="New Count"
+        app:showAsAction="never"
+        android:orderInCategory="101"
+        >
+
+    </item>
+
+    <item
+        android:id="@+id/ca_delete"
+        android:title="Delete"
+        android:orderInCategory="102"
+        app:showAsAction="never"
+        >
+
+    </item>
+
+    <item
+        android:id="@+id/rest_count"
+        android:title="Reset Count"
+        android:orderInCategory="104"
+        app:showAsAction="never">
+    </item>
+
+     <item
+         android:id="@+id/rename"
+         android:title="Rename"
+         android:orderInCategory="103"
+         app:showAsAction="never"
+         >
+
+     </item>
+
+
+
+
+
+</menu>

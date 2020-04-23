@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">One Hundred Thousand Counter</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="main_screen_label">100000 Counter</string>
+
+    <string name="sort_by_max_count">Sort by max counting</string>
+    <string name="sort_alpha">Sort alphabetically</string>
+
+
+    <string name="naming_rules_dialog_title">Naming rules</string>
+    <string name="nr_dialog_mg">Min length: 3.\nMax length: 60.\n\nWide spaces will automatically be deleted.\n\nSpace between alphabets,digits,brackets etc will not be deleted and will be included in the name.</string>
+    <string name="o_k">OK</string>
+
+    <string name="cancel_dialog_btu">Cancel</string>
+    <string name="save_dialog_btn">Save</string>
+
+
+    <string name="rename_count_hint">New title</string>
+    <string name="rename_count_dialog_title">Rename</string>
+    <string name="counting_limit_dialog_title">Counting limit reached</string>
+    <string name="minus_one">-1</string>
+    <string name="plus_one">+1</string>
+    <string name="et_hint_count_title">Count title</string>
+    <string name="one_hundred_000">100000</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="empty_list_text">Empty</string>
+</resources>

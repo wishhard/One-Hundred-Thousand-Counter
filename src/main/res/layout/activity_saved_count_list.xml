@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_color"
+    tools:context="com.wishhard.ohtc.SavedCountListActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/save_count_list_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:theme="@style/ToolbarTheme"
+        android:elevation="4dp"
+        app:titleTextAppearance="@style/Toolbar.TitleText"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:background="?attr/colorPrimary" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/counts_recycle_view"
+        android:layout_below="@+id/save_count_list_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layoutManager="LinearLayoutManager"
+
+        />
+
+    <TextView
+        android:id="@+id/emptyTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/empty_list_text"
+        android:textStyle="bold"
+        android:textSize="@dimen/empty_text_size"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        />
+
+
+</RelativeLayout>

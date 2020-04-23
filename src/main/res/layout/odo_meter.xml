@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/odo_bg"
+    android:stretchColumns="*">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <com.wishhard.ohtc.odo_view.Odo
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ten_thosand_10000"
+            android:layout_weight="1">
+
+        </com.wishhard.ohtc.odo_view.Odo>
+
+        <com.wishhard.ohtc.odo_view.Odo
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/thosand_1000"
+            android:layout_weight="1">
+
+        </com.wishhard.ohtc.odo_view.Odo>
+
+        <com.wishhard.ohtc.odo_view.Odo
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/hundred_100"
+            android:layout_weight="1">
+
+        </com.wishhard.ohtc.odo_view.Odo>
+
+        <com.wishhard.ohtc.odo_view.Odo
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tens_10"
+            android:layout_weight="1">
+
+        </com.wishhard.ohtc.odo_view.Odo>
+
+        <com.wishhard.ohtc.odo_view.Odo
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/unit_1"
+            android:layout_weight="1">
+
+        </com.wishhard.ohtc.odo_view.Odo>
+
+
+    </TableRow>
+
+
+
+
+
+</TableLayout>

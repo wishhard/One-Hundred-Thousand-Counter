@@ -1,0 +1,47 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/activity_color</item>
+    </style>
+
+
+
+    <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="actionMenuTextColor">@android:color/holo_green_light</item>
+        <item name="homeAsUpIndicator">@drawable/ic_arrow_left</item>
+        <item name="actionOverflowButtonStyle">@style/overflowBtnStyle</item>
+        <item name="android:logo">@mipmap/ic_launcher</item>
+
+    </style>
+
+
+
+    <style name="overflowBtnStyle" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:src">@drawable/ic_dots_vertical</item>
+    </style>
+
+
+
+    <style name="Toolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">21sp</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:paddingLeft">3dp</item>
+        <item name="android:paddingStart">3dp</item>
+    </style>
+
+
+
+
+
+
+
+</resources>

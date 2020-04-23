@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingRight="@dimen/dialog_padding"
+    android:paddingLeft="@dimen/dialog_padding"
+    android:paddingTop="@dimen/dialog_padding"
+    android:orientation="vertical"
+    android:splitMotionEvents="false">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rename_count_dialog_title"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/renameEt"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/rename_count_hint"
+        android:inputType="textCapWords"/>
+
+    <TextView
+        android:id="@+id/renameErrTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nr_dialog_mg"
+        android:textColor="@android:color/holo_red_light"
+        android:visibility="gone"
+        android:textSize="12sp"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/button_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:gravity="end"
+        android:splitMotionEvents="false">
+
+        <Button
+            android:id="@+id/renameBtnCancel"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/cancel_dialog_btu" />
+
+        <Button
+            android:id="@+id/renameBtnSave"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/save_dialog_btn" />
+
+    </LinearLayout>
+
+</LinearLayout>
